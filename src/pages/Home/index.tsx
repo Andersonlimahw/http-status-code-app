@@ -12,8 +12,6 @@ export default function Home() {
   const [dialogTitle, setDialogTitle] = useState<string>('');
   const [dialogDescription, setDialogDescription] = useState<string>('');
 
-  const [filter, setFilter] = useState<string>('2xx');
-
   const httpListZustand = useHttpList((state : any) => state)
   // const filterdList = useHttpList((state: any) => state.filterList(filter));
 

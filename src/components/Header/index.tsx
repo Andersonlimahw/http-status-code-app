@@ -3,7 +3,7 @@ export const Header = () => {
         <header className="mx-auto text-left">
             <h2 className="text-3xl font-bold tracking-tight text-green-400 sm:text-4xl">Http Status code</h2>
             <p className="mt-2 text-lg leading-8 text-green-200">
-                Aprenda mais sobre os códigos de status http, clicando em alguns dos cards
+                Aprenda mais sobre os códigos de status http, clicando em alguns dos cards.
             </p>
         </header>
     )

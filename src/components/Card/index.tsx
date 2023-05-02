@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { ItemModel } from '../../model/Item';
 import { Badge } from './Badge';
-import { Description } from './Description';
 import { Title } from './Title';
-import { ModalDialog } from '../ModalDialog';
 
 interface ICardProps {
     item: ItemModel;
