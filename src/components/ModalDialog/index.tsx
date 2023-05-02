@@ -20,7 +20,7 @@ export const ModalDialog = ({ title, description, isOpen, toggleIsOpen }: Dialog
       leaveTo="transform scale-95 opacity-0"
       as={Fragment}
     >
-      <Dialog className="bg-zinc-900 text-white-800 fixed w-full h-full inline-block" open={isOpen} onClose={() => toggleIsOpen(false)} className="relative z-50">
+      <Dialog className="bg-zinc-900 text-white-800 fixed w-full h-full inline-block relative z-50" open={isOpen} onClose={() => toggleIsOpen(false)}>
         <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4  overflow-y-auto">
           {/* The actual dialog panel  */}
