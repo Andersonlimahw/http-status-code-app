@@ -18,7 +18,6 @@ export const Card = ({
         id,
         code,
         title,
-        description,
         imageUrl,
         alt
     } = item;
@@ -31,13 +30,12 @@ export const Card = ({
 
 
     return (
-        <div
-            className="flex max-w-xl flex-row items-start justify-start cursor-pointer"
+        <div className="flex max-w-xl flex-row items-start justify-start cursor-pointer shadow hover:shadow-lg hover:scale-110 transform-gpu"
             key={id}
             onClick={handleClick}
         >
             <div className="group inline flex-1">
-                <img className="h-400 w-270 rounded-sm bg-gray-50 mb-2  hover:scale-110 transform-gpu" src={imageUrl} alt={alt} />
+                <img className="h-400 w-270 rounded-sm bg-gray-50 mb-2" src={imageUrl} alt={alt} />
                 <div className="p-4 flex justify-between">
                     <Title>
                         <Badge variant={codeColor[code]}>
@@ -47,18 +45,6 @@ export const Card = ({
                         &nbsp;
                         {title}
                     </Title>
-                </div>
-
-
-                <div className='flex-1'>
-                    <div className="relative mt-8 flex items-left gap-x-4 text-left">
-                        <div className="text-sm leading-6">
-
-                            {/* <Description>
-                                {description}
-                            </Description> */}
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
