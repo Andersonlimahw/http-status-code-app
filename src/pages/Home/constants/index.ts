@@ -7,7 +7,7 @@ const httpItem : ItemModel = {
     "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
   family: "2xx",
   code: "200",
-  imageUrl: "http://lorempixel.com.br/400/270?1",
+  imageUrl: "assets/images/code/0.png",
   alt: "Imagem"
 };
 
