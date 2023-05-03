@@ -7,7 +7,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
-      <Wrapper open>
+      <Wrapper>
         <Home />
       </Wrapper>
       <Footer />
