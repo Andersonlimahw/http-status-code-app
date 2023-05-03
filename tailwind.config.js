@@ -18,7 +18,7 @@ export default {
       scale: {
         '110': '1.1',
         '150': '1.5',
-      }
+      }      
     },
   },
   plugins: [],

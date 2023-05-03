@@ -27,7 +27,7 @@ export const Card = ({
 
 
     return (
-        <div className="flex max-w-xl flex-row items-start justify-start cursor-pointer shadow hover:shadow-lg hover:scale-110 transform-gpu"
+        <div className="flex max-w-xl flex-row items-start justify-start cursor-pointer shadow-lg hover:shadow-sm hover:scale-110 transform-gpu"
             key={id}
             onClick={handleClick}
         >
