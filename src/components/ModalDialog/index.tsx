@@ -5,10 +5,11 @@ interface DialogProps {
   title: string;
   description: string;
   externalLink: string;
+  externalLabel?: string;
   isOpen: boolean;
   toggleIsOpen: any;
 }
-export const ModalDialog = ({ title, description, externalLink, isOpen, toggleIsOpen }: DialogProps) => {
+export const ModalDialog = ({ title, description, externalLink, externalLabel = '🔗 documentação oficial', isOpen, toggleIsOpen }: DialogProps) => {
 
   return (
     <Transition
@@ -27,11 +28,10 @@ export const ModalDialog = ({ title, description, externalLink, isOpen, toggleIs
           {/* The actual dialog panel  */}
           <Dialog.Panel className="mx-auto max-w-sm rounded bg-zinc-900 p-4">
             <Dialog.Title className="py-2 text-green-400">{title}</Dialog.Title>
-            <Dialog.Description className="py-2 text-zinc-400">
+            <Dialog.Description className="py-4 text-zinc-400 block">
               {description}
-              <br />
-              <a href={`${externalLink}`} target="_blank"  className="text-white underline decoration-green-500">
-                documentação oficial 🔗
+              <a href={`${externalLink}`} target="_blank"  className="text-white underline decoration-green-500 py-2 mt-4 mb-4 block">
+                {externalLabel}
               </a>
             </Dialog.Description>
             <button className='rounded-full bg-green-800 text-white mt-2 mb-2' onClick={() => toggleIsOpen(false)}>OK</button>

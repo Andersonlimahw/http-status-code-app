@@ -649,6 +649,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1143,6 +1147,14 @@ video {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-green-500 {
+  text-decoration-color: #22c55e;
 }
 
 .opacity-0 {

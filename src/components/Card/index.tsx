@@ -5,11 +5,15 @@ import { Transition } from '@headlessui/react';
 
 interface ICardProps {
     item: ItemModel;
+    animationDurationEnter: number;
+    animationDurationLeave: number;
     handleClick: any;
 }
 
 export const Card = ({
     item,
+    animationDurationEnter,
+    animationDurationLeave,
     handleClick
 }: ICardProps) => {
     const {
@@ -32,10 +36,10 @@ export const Card = ({
 
     return (
         <Transition
-            enter="transition-opacity ease-linear duration-500"
+            enter={`transition-opacity ease-linear duration-${animationDurationEnter}`}
             enterFrom="opacity-0 scale-0"
             enterTo="opacity-100 scale-100"
-            leave="transition-opacity ease-linear duration-600"
+            leave={`transition-opacity ease-linear duration-${animationDurationLeave}`}
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-0"
         >
@@ -45,10 +49,10 @@ export const Card = ({
             >
                 <div className="group inline flex-1">
                     <Transition.Child
-                        enter="transition-opacity ease-linear duration-700"
+                        enter={`transition-opacity ease-linear duration-${animationDurationEnter + 100}`}
                         enterFrom="opacity-0 scale-0"
                         enterTo="opacity-100 scale-100"
-                        leave="transition-opacity ease-linear duration-800"
+                        leave={`transition-opacity ease-linear duration-${animationDurationLeave + 200}`}
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-0"
                     >
@@ -56,10 +60,10 @@ export const Card = ({
                     </Transition.Child>
 
                     <Transition.Child
-                        enter="transition-opacity ease-linear duration-700"
+                        enter={`transition-opacity ease-linear duration-${animationDurationEnter + 200}`}
                         enterFrom="opacity-0 scale-0"
                         enterTo="opacity-100 scale-100"
-                        leave="transition-opacity ease-linear duration-800"
+                        leave={`transition-opacity ease-linear duration-${animationDurationLeave + 300}`}
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-0"
                     >

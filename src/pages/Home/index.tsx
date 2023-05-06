@@ -8,14 +8,14 @@ import { useHttpList } from "../../components/Wrapper/hooks/use-http-list";
 export default function Home() {
   const [dialogIsOpen, setDialogIsOpen] = useState<boolean>(false);
   const [dialogTitle, setDialogTitle] = useState<string>('');
-  const [dialogDescription, setDialogDescription] = useState<string>('');
+  const [dialogItem, setDialogItem] = useState<ItemModel>();
 
   const httpListZustand = useHttpList((state : any) => state)
 
-  function handleClick({ code, title, description } : ItemModel) {
+  function handleClick(item: ItemModel) {
     setDialogIsOpen(true);
-    setDialogTitle(`HttpStatusCode ${title} : ${code}`);
-    setDialogDescription(description);
+    setDialogTitle(`HttpStatusCode ${item.title} : ${item.code}`);
+    setDialogItem(item);
   }
  
 
@@ -23,16 +23,26 @@ export default function Home() {
     <div className="py-8 sm:py-16">
 
       {
-        dialogIsOpen && (<ModalDialog title={dialogTitle} description={dialogDescription} isOpen={dialogIsOpen} toggleIsOpen={() => setDialogIsOpen((prevState) => !prevState)} />)
+        dialogIsOpen && (<ModalDialog 
+            title={dialogTitle} 
+            description={dialogItem?.description as string} 
+            isOpen={dialogIsOpen} 
+            externalLink={dialogItem?.details.reference as string}
+            toggleIsOpen={() => 
+              setDialogIsOpen((prevState) => !prevState)} 
+            />)
       }
       
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {httpListZustand.httpList.map((item: ItemModel) => (
-            <Card key={item.id} item={{
-              ...item,
-              imageUrl: item.imageUrl
-            }} handleClick={() => handleClick(item)} />
+          {httpListZustand.httpList.map((item: ItemModel, index: number) => (
+            <Card 
+              key={item.id} 
+              animationDurationEnter={(index * 100) * 2}
+              animationDurationLeave={(index * 100) * 2.2}
+              item={item} 
+              handleClick={() => handleClick(item)} 
+            />
           ))}
         </div>
       </div>
