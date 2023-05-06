@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Card } from "../../components/Card";
 import { ItemModel } from "../../model/Item";
 import { ModalDialog } from "../../components/ModalDialog";
-import { useHttpList } from "./hooks/use-http-list";
+import { useHttpList } from "../../components/Wrapper/hooks/use-http-list";
 
 export default function Home() {
   const [dialogIsOpen, setDialogIsOpen] = useState<boolean>(false);

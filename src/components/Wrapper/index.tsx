@@ -2,8 +2,8 @@ import {FC } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Header } from '../Header/index';
-import { useHttpList } from '../../pages/Home/hooks/use-http-list';
-import { tabs } from '../../pages/Home/constants';
+import { EActionType, useHttpList } from './hooks/use-http-list';
+import { tabs } from '../../constants';
 
 const user = {
   name: 'Anderson Lima',
@@ -11,7 +11,7 @@ const user = {
   avatarImageUrl:
     'https://avatars.githubusercontent.com/u/15092575?v=4',
 }
-const navigation = tabs;
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -20,14 +20,24 @@ interface WrapperBarProps {
   children: any;
 }
 export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
-  const httpListZustand = useHttpList((state: any) => state);
+  const zustandStore = useHttpList((state: any) => state);
+  const { dispatch, selectedFilter } = zustandStore;
 
   function search(family: string) {
     if (family === 'all') {
-      return httpListZustand.resetFilter();
+      return dispatch({
+        type: EActionType.RESET,        
+      });
     }
-    return httpListZustand.filterList(family);
+    return dispatch({
+      type: EActionType.FILTER_BY_FAMILY_CODE, 
+      payload: {
+        search: family
+      }       
+    });
   }
+
+  const navigation = tabs;
 
   return (
     <>
@@ -45,24 +55,24 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                         alt="Your Company"
                       /> */}
                       {/* // TODO: criar logo via canva Ia */}
-                      🍋 <span className="text-green-500">Lemon.dev</span>
+                      🍋 <span className="text-gradient">Lemon.dev</span>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-2">
                         {navigation.map((item) => (
-                          <a
+                          <span
                             key={item.name}
                             onClick={() => search(item.family)}
                             className={classNames(
-                              item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-green-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                              item.family === selectedFilter
+                                ? 'bg-green-700 text-zinc-900 font-bold hover:text-zinc-900'
+                                : 'text-gray-300 hover:bg-green-700 text-gradient',
+                              'rounded-md px-3 py-2 text-sm font-medium hover:cursor-pointer '
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
-                          </a>
+                          </span>
                         ))}
                       </div>
                     </div>

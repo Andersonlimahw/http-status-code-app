@@ -12,11 +12,11 @@ export const ModalDialog = ({ title, description, isOpen, toggleIsOpen }: Dialog
   return (
     <Transition
       show={isOpen}
-      enter="transition duration-100 ease-out"
+      enter="transition duration-300 ease-out"
       enterFrom="transform scale-95 opacity-0"
-      enterTo="transform scale-100 opacity-100"
-      leave="transition duration-75 ease-out"
-      leaveFrom="transform scale-100 opacity-100"
+      enterTo="transform scale-110 opacity-100"
+      leave="transition duration-400 ease-out"
+      leaveFrom="transform scale-110 opacity-100"
       leaveTo="transform scale-95 opacity-0"
       as={Fragment}
     >
