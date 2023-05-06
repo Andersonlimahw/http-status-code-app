@@ -2,8 +2,9 @@ import {FC } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Header } from '../Header/index';
-import { EActionType, useHttpList } from './hooks/use-http-list';
 import { tabs } from '../../constants';
+import { EActionType } from './flux';
+import { useHttpList } from './hooks/use-http-list';
 
 const user = {
   name: 'Anderson Lima',
