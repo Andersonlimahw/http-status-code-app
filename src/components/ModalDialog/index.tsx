@@ -4,10 +4,11 @@ import { Dialog, Transition } from '@headlessui/react';
 interface DialogProps {
   title: string;
   description: string;
+  externalLink: string;
   isOpen: boolean;
   toggleIsOpen: any;
 }
-export const ModalDialog = ({ title, description, isOpen, toggleIsOpen }: DialogProps) => {
+export const ModalDialog = ({ title, description, externalLink, isOpen, toggleIsOpen }: DialogProps) => {
 
   return (
     <Transition
@@ -28,6 +29,10 @@ export const ModalDialog = ({ title, description, isOpen, toggleIsOpen }: Dialog
             <Dialog.Title className="py-2 text-green-400">{title}</Dialog.Title>
             <Dialog.Description className="py-2 text-zinc-400">
               {description}
+              <br />
+              <a href={`${externalLink}`} target="_blank"  className="text-white underline decoration-green-500">
+                documentação oficial 🔗
+              </a>
             </Dialog.Description>
             <button className='rounded-full bg-green-800 text-white mt-2 mb-2' onClick={() => toggleIsOpen(false)}>OK</button>
           </Dialog.Panel>

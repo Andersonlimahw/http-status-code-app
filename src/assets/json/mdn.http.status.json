@@ -1,0 +1,2338 @@
+
+{
+    "data": {
+      "100": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/100",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.100",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "103": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/103",
+          "source_file": "http/status.json",
+          "spec_url": "https://html.spec.whatwg.org/multipage/semantics.html#early-hints",
+          "status": {
+            "deprecated": false,
+            "experimental": true,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "notes": "Supported in HTTP/2 and later (SPDY/QUIC)",
+                "version_added": "103",
+                "release_date": "2022-06-21"
+              }
+            ],
+            "chrome_android": [
+              {
+                "notes": "Supported in HTTP/2 and later (SPDY/QUIC)",
+                "version_added": "103",
+                "release_date": "2022-06-21"
+              }
+            ],
+            "edge": [
+              {
+                "notes": "Supported in HTTP/2 and later (SPDY/QUIC)",
+                "version_added": "103",
+                "release_date": "2022-07-01"
+              }
+            ],
+            "firefox": [
+              {
+                "flags": [
+                  {
+                    "name": "network.early-hints.enabled",
+                    "type": "preference",
+                    "value_to_set": "true"
+                  },
+                  {
+                    "name": "network.early-hints.preconnect.enabled",
+                    "type": "preference",
+                    "value_to_set": "true"
+                  }
+                ],
+                "notes": "Supported in HTTP1.0 and later",
+                "version_added": "102",
+                "release_date": "2022-06-28"
+              },
+              {
+                "notes": "Supported in HTTP1.0 and later",
+                "version_added": "preview"
+              }
+            ],
+            "ie": [
+              {
+                "version_added": false
+              }
+            ],
+            "oculus": [
+              {
+                "notes": "Supported in HTTP/2 and later (SPDY/QUIC)",
+                "version_added": "23.0",
+                "release_date": "2022-08-15"
+              }
+            ],
+            "opera": [
+              {
+                "version_added": false
+              }
+            ],
+            "safari": [
+              {
+                "version_added": false
+              }
+            ]
+          }
+        }
+      },
+      "200": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/200",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.200",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "201": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/201",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.201",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "204": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/204",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.204",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "206": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/206",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.206",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "301": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/301",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.301",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "302": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/302",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.302",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "303": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/303",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.303",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "304": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/304",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.304",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "307": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/307",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.307",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "308": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/308",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.308",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": "36",
+                "release_date": "2014-07-16"
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": "36",
+                "release_date": "2014-07-16"
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": "14",
+                "release_date": "2012-07-17"
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": "14",
+                "release_date": "2012-06-26"
+              }
+            ],
+            "ie": [
+              {
+                "notes": "Does not work below Windows 10.",
+                "version_added": "11",
+                "release_date": "2013-10-17"
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": "5.0"
+              }
+            ],
+            "opera": [
+              {
+                "version_added": "24",
+                "release_date": "2014-09-02"
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": "24",
+                "release_date": "2014-09-10"
+              }
+            ],
+            "safari": [
+              {
+                "version_added": "7",
+                "release_date": "2013-10-22"
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": "7",
+                "release_date": "2013-09-18"
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": "3.0",
+                "release_date": "2015-04-10"
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": "37",
+                "release_date": "2014-09-03"
+              }
+            ]
+          }
+        }
+      },
+      "401": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/401",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.401",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "403": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/403",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.403",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "404": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/404",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.404",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "406": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/406",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.406",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "407": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/407",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.407",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "409": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/409",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.409",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "410": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/410",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.410",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "412": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/412",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.412",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "416": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/416",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.416",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "418": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/418",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc2324#section-2.3.2",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "425": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/425",
+          "source_file": "http/status.json",
+          "spec_url": "https://httpwg.org/specs/rfc8470.html#status",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": null
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": null
+              }
+            ],
+            "edge": [
+              {
+                "version_added": null
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": "58",
+                "release_date": "2018-01-23"
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": "58",
+                "release_date": "2018-01-22"
+              }
+            ],
+            "ie": [
+              {
+                "version_added": null
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": null
+              }
+            ],
+            "opera": [
+              {
+                "version_added": null
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": null
+              }
+            ],
+            "safari": [
+              {
+                "version_added": null
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": null
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": null
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": null
+              }
+            ]
+          }
+        }
+      },
+      "451": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/451",
+          "source_file": "http/status.json",
+          "spec_url": "https://httpwg.org/specs/rfc7725.html#n-451-unavailable-for-legal-reasons",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "500": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/500",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.500",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "501": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/501",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.501",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "502": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/502",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.502",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "503": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/503",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.503",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      },
+      "504": {
+        "details": {
+          "mdn_url": "/en-US/docs/Web/HTTP/Status/504",
+          "source_file": "http/status.json",
+          "spec_url": "https://www.rfc-editor.org/rfc/rfc9110#status.504",
+          "status": {
+            "deprecated": false,
+            "experimental": false,
+            "standard_track": true
+          },
+          "support": {
+            "chrome": [
+              {
+                "version_added": true
+              }
+            ],
+            "chrome_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "edge": [
+              {
+                "version_added": "12",
+                "release_date": "2015-07-28"
+              }
+            ],
+            "firefox": [
+              {
+                "version_added": true
+              }
+            ],
+            "firefox_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "ie": [
+              {
+                "version_added": true
+              }
+            ],
+            "oculus": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera": [
+              {
+                "version_added": true
+              }
+            ],
+            "opera_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari": [
+              {
+                "version_added": true
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": true
+              }
+            ],
+            "samsunginternet_android": [
+              {
+                "version_added": true
+              }
+            ],
+            "webview_android": [
+              {
+                "version_added": true
+              }
+            ]
+          }
+        }
+      }
+    }    
+  }

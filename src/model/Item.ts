@@ -6,4 +6,5 @@ export interface ItemModel {
     description: string;
     imageUrl: string;
     alt: string;
+    details?: any;
 }

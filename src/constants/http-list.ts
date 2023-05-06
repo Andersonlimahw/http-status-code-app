@@ -1,15 +1,43 @@
 import { ItemModel } from "../model/Item";
 
-const httpItem : ItemModel = {
-  id: 1,
-  title: "Success",
-  description:
-    "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-  family: "2xx",
-  code: "200",
-  imageUrl: "assets/images/code/0.png",
-  alt: "Imagem"
-};
+import httpDocumentation from '../../src/assets/json/http.status.json';
+import mdnHttpDocumentation from '../../src/assets/json/mdn.http.status.json';
 
+export interface HttpDocItemModel {
+    code: string;
+    description: string;
+    reference: string;
+}
+const defaultReferenceUrl = 'https://www.rfc-editor.org/rfc/rfc9110';
 
-export const httpList = [ httpItem, { ...httpItem, id: 2, family: '1xxx' }, {...httpItem, id: 3, family: '2xx' }, {...httpItem, id: 4, family: '4xx'}, {...httpItem, id: 5, family: '5xx'}, {...httpItem, id: 6, family: '2xx'} ];
+function getDetails({ code }: HttpDocItemModel) {
+    const detail = (mdnHttpDocumentation as any)[code]?.details;
+    if(!detail) {
+        return {
+            reference: defaultReferenceUrl, 
+            status: undefined,
+        };
+    }
+   
+    return {
+        reference: detail.spec_url, 
+        status: detail.status
+    }
+}
+
+function mapper() {
+    const data =  httpDocumentation as HttpDocItemModel[];
+    const mappedStatus : ItemModel[] = data.map((item, index) => ({
+        id: index, 
+        title: item.description, 
+        description: item.description, 
+        family: `${item.code.slice(0,1)}xx`,
+        imageUrl: `http://lorempixel.com.br/500/400/?${index}`,
+        code: item.code,
+        alt: "imagem", 
+        details: getDetails(item),
+    }));
+    return mappedStatus;
+}
+
+export const httpList = mapper();
