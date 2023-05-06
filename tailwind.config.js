@@ -11,6 +11,12 @@ export default {
     "./src/components/**/**/*.{html,js,ts,tsx,jsx}"
   ],
   theme: {
+     screens: {
+      sm: '320px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
