@@ -25,14 +25,24 @@ function getDetails({ code }: HttpDocItemModel) {
     }
 }
 
+const returnImageUrl = ({ code, description } : HttpDocItemModel) => {
+    const imageName = description.toLowerCase() == 'unassigned' ? 'default' : code
+    const baseImageUrl = 'assets/images/code/';
+    const imageExtension = 'jpg';    
+    return `${baseImageUrl}/${imageName}.${imageExtension}`;
+};
+
 function mapper() {
     const data =  httpDocumentation as HttpDocItemModel[];
+    
+    
+
     const mappedStatus : ItemModel[] = data.map((item, index) => ({
         id: index, 
         title: item.description, 
         description: item.description, 
         family: `${item.code.slice(0,1)}xx`,
-        imageUrl: `http://lorempixel.com.br/500/400/?${index}`,
+        imageUrl: returnImageUrl(item),
         code: item.code,
         alt: "imagem", 
         details: getDetails(item),

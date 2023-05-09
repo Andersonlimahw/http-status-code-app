@@ -63,11 +63,11 @@ export const Header = () => {
                             Cada classe representa um tipo diferente de resposta.
                         </p>
                         <ul>
-                            <li className="py-2 hover:scale-95"><strong className="text-blue-500 rounded-md shadow-lg">1xx</strong>  indicam informações de status ou progresso.</li>
-                            <li className="py-2 hover:scale-95"><strong className="text-green-500">2xx</strong>  indicam que a solicitação foi bem-sucedida.</li>
-                            <li className="py-2 hover:scale-95"><strong className="text-yellow-500">3xx</strong> indicam um redirecionamento.</li>
-                            <li className="py-2 hover:scale-95"> <strong className="text-yellow-500"> 4xx</strong> indicam um erro do cliente.</li>
-                            <li className="py-2 hover:scale-95"><strong className="text-red-500">5xx</strong> indicam um erro do servidor.</li>
+                            <li className="py-2 hover:underline decoration-green-500"><strong className="text-blue-500 rounded-md shadow-lg">1xx</strong>  indicam informações de status ou progresso.</li>
+                            <li className="py-2 hover:underline decoration-green-500 "><strong className="text-green-500">2xx</strong>  indicam que a solicitação foi bem-sucedida.</li>
+                            <li className="py-2 hover:underline decoration-green-500"><strong className="text-yellow-500">3xx</strong> indicam um redirecionamento.</li>
+                            <li className="py-2 hover:underline decoration-green-500"> <strong className="text-yellow-500"> 4xx</strong> indicam um erro do cliente.</li>
+                            <li className="py-2 hover:underline decoration-green-500"><strong className="text-red-500">5xx</strong> indicam um erro do servidor.</li>
                         </ul>
                         <p className="mt-4 text-lg leading-8 text-white-200">
                             Em resumo, o HttpStatusCode é uma ferramenta importante para entender a comunicação entre o cliente e o servidor em uma aplicação web. Se você está desenvolvendo um site ou aplicativo, é fundamental estar familiarizado com esses códigos e saber como lidar com eles.

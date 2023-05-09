@@ -14,7 +14,7 @@ export default function Home() {
 
   function handleClick(item: ItemModel) {
     setDialogIsOpen(true);
-    setDialogTitle(`HttpStatusCode ${item.title} : ${item.code}`);
+    setDialogTitle(`HttpStatusCode: ${item.code} | ${item.title}`);
     setDialogItem(item);
   }
  

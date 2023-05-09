@@ -27,11 +27,11 @@ export const Card = ({
 
     const codeColor: any = {
         '2xx': 'success',
+        '3xx': 'warning',
         '4xx': 'warning',
-        '5xx': 'error',
+        '5xx': 'danger',
         '': 'zinc-900'
     };
-
 
 
     return (
@@ -56,7 +56,7 @@ export const Card = ({
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-0"
                     >
-                        <img className="h-400 w-[100%] rounded-sm bg-gray-50 mb-2" src={imageUrl} alt={alt} />
+                        <img className="max-h-[300px] min-h-[300px]  h-[300px] w-[100%] grayscale hover:grayscale-0 rounded-sm bg-gray-50 mb-2" src={imageUrl} alt={alt} onError={(e : any) => e.target.src = 'assets/images/code/default.jpg' } />
                     </Transition.Child>
 
                     <Transition.Child
