@@ -1185,6 +1185,10 @@ video {
   text-decoration-color: #22c55e;
 }
 
+.decoration-green-400 {
+  text-decoration-color: #4ade80;
+}
+
 .opacity-0 {
   opacity: 0;
 }

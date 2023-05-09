@@ -73,7 +73,9 @@ export const Header = () => {
                             Em resumo, o HttpStatusCode é uma ferramenta importante para entender a comunicação entre o cliente e o servidor em uma aplicação web. Se você está desenvolvendo um site ou aplicativo, é fundamental estar familiarizado com esses códigos e saber como lidar com eles.
                         </p>
                         <p className="mt-4 text-lg leading-8 text-white-200">
-                            Clique em cada um dos cards abaixo para saber mais.
+                            Clique em cada um dos cards abaixo para saber mais. Imagens criadas por  
+                            <a className='text-green-500 decoration-green-400 underline' href="https://www.freepik.com/author/stories" target="_blank">@storyset</a>
+                            
                         </p>
                     </Transition.Child>
 
