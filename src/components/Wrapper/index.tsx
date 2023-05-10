@@ -8,7 +8,7 @@ import { useHttpList } from './hooks/use-http-list';
 
 const user = {
   name: 'Anderson Lima',
-  email: 'andersonlimahw@gmail.com',
+  instagram: '@anderson.lima.dev',
   avatarImageUrl:
     'https://avatars.githubusercontent.com/u/15092575?v=4',
 }
@@ -130,7 +130,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                     </div>
                     <div className="ml-3">
                       <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                      <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                      <div className="text-sm font-medium leading-none text-gray-400">{user.instagram}</div>
                     </div>
                   </div>
                 </div>
