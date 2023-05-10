@@ -1,4 +1,4 @@
-import {FC } from 'react'
+import { FC } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Header } from '../Header/index';
@@ -27,14 +27,14 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
   function search(family: string) {
     if (family === 'all') {
       return dispatch({
-        type: EActionType.RESET,        
+        type: EActionType.RESET,
       });
     }
     return dispatch({
-      type: EActionType.FILTER_BY_FAMILY_CODE, 
+      type: EActionType.FILTER_BY_FAMILY_CODE,
       payload: {
         search: family
-      }       
+      }
     });
   }
 
@@ -66,9 +66,9 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                             onClick={() => search(item.family)}
                             className={classNames(
                               item.family === selectedFilter
-                                ? 'bg-green-700 text-zinc-900 font-bold hover:text-zinc-900'
+                                ? 'underline decoration-lime-800 decoration-4 py-4 font-bold text-lime-500'
                                 : 'text-gray-300 hover:bg-green-700 text-gradient',
-                              'rounded-md px-3 py-2 text-sm font-medium hover:cursor-pointer '
+                              'rounded-md px-3 py-2 text-sm font-bold hover:cursor-pointer '
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
@@ -112,7 +112,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                     <Disclosure.Button
                       key={item.name}
                       as="a"
-
+                      onClick={() => search(item.family)}
                       className={classNames(
                         item.current ? 'bg-white-500 text-green-600' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'block rounded-md px-3 py-2 text-base font-medium'
@@ -155,7 +155,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
             >
               {children}
             </Transition>
-            
+
           </div>
         </main>
       </div>
