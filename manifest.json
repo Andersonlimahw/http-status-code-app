@@ -11,38 +11,35 @@
     "id": "lemon_dev_http_status_code",
     "icons": [
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "48x48",
         "type": "image/png"
       },
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "72x72",
         "type": "image/png"
       },
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "96x96",
         "type": "image/png"
       },
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "144x144",
         "type": "image/png"
       },
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "168x168",
         "type": "image/png"
       },
       {
-        "src": "images/icon/lemon_icon.png",
+        "src": "assets/images/icon/lemon_icon.png",
         "sizes": "192x192",
         "type": "image/png"
       }
-    ],   
-    "related_applications": [
-     
-    ]
+    ]    
   }
   
