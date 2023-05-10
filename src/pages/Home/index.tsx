@@ -4,6 +4,7 @@ import { Card } from "../../components/Card";
 import { ItemModel } from "../../model/Item";
 import { ModalDialog } from "../../components/ModalDialog";
 import { useHttpList } from "../../components/Wrapper/hooks/use-http-list";
+import { Search } from "../../components/Search";
 
 export default function Home() {
   const [dialogIsOpen, setDialogIsOpen] = useState<boolean>(false);
@@ -33,7 +34,7 @@ export default function Home() {
             />)
       }
       
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">        
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {httpListZustand.httpList.map((item: ItemModel, index: number) => (
             <Card 

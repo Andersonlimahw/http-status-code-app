@@ -10,6 +10,9 @@ export default {
     "./src/components/**/*.{html,js,ts,tsx,jsx}",
     "./src/components/**/**/*.{html,js,ts,tsx,jsx}"
   ],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   theme: {
      screens: {
       sm: '320px',

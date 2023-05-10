@@ -14,5 +14,11 @@ export const reducer = (state: any, { type, payload }: IAction) => {
             httpList: httpList.filter((x: ItemModel) =>
           x.family.includes(payload.search)
         ), };    
+        case EActionType.FILTER_BY_CODE:
+          return { 
+              ...state,              
+              httpList: httpList.filter((x: ItemModel) =>
+            x.code.includes(payload.search)
+          ), };  
     }
   };

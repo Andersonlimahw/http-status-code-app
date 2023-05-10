@@ -5,6 +5,7 @@ import { Header } from '../Header/index';
 import { tabs } from '../../constants';
 import { EActionType } from './flux';
 import { useHttpList } from './hooks/use-http-list';
+import { Search } from '../Search';
 
 const user = {
   name: 'Anderson Lima',
@@ -38,6 +39,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
     });
   }
 
+
   const navigation = tabs;
 
   return (
@@ -49,13 +51,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 text-green-600">
-                      {/* <img
-                        className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
-                      /> */}
-                      {/* // TODO: criar logo via canva Ia */}
+                    <div className="flex-shrink-0 text-green-600">                     
                       🍋 <span className="text-gradient">Lemon.dev</span>
                     </div>
                     <div className="hidden md:block">
@@ -75,6 +71,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                             {item.name}
                           </span>
                         ))}
+                        <Search />
                       </div>
                     </div>
                   </div>
@@ -122,6 +119,7 @@ export const Wrapper: FC<WrapperBarProps> = ({ children }: WrapperBarProps) => {
                       {item.name}
                     </Disclosure.Button>
                   ))}
+                  <Search />
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
                   <div className="flex items-center px-5">

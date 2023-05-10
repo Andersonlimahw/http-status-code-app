@@ -1,6 +1,7 @@
 export enum EActionType {
   RESET = "RESET",
   FILTER_BY_FAMILY_CODE = "FILTER_BY_FAMILY_CODE",
+  FILTER_BY_CODE = "FILTER_BY_CODE",
 }
 
 export interface IAction {
