@@ -56,7 +56,7 @@ export const Card = ({
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-0"
                     >
-                        <img className="max-h-[300px] min-h-[300px]  h-[300px] w-[100%] grayscale hover:grayscale-0 rounded-sm bg-gray-50 mb-2" src={imageUrl} alt={alt} onError={(e : any) => e.target.src = 'assets/images/code/default.jpg' } />
+                        <img className="max-h-[300px] min-h-[300px]  h-[300px] w-[100%] grayscale hover:grayscale-0 rounded-sm bg-gray-50 mb-2" src={imageUrl} alt={alt} onError={(e : any) => e.target.src = 'assets/images/code/default.jpg' } loading="lazy" />
                     </Transition.Child>
 
                     <Transition.Child
