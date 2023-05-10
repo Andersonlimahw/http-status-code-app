@@ -4,7 +4,6 @@ import { Card } from "../../components/Card";
 import { ItemModel } from "../../model/Item";
 import { ModalDialog } from "../../components/ModalDialog";
 import { useHttpList } from "../../components/Wrapper/hooks/use-http-list";
-import { Search } from "../../components/Search";
 
 export default function Home() {
   const [dialogIsOpen, setDialogIsOpen] = useState<boolean>(false);
