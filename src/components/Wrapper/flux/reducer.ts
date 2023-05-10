@@ -6,7 +6,7 @@ import { initialState } from "./initial-state";
 export const reducer = (state: any, { type, payload }: IAction) => {
     switch (type) {   
       case EActionType.RESET:
-        return { ...initialState, httpList: httpList };
+        return { ...initialState, ...state, httpList: httpList };
       case EActionType.FILTER_BY_FAMILY_CODE:
         return { 
             ...state, 
